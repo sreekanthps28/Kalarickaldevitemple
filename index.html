@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kalarickal Devi Temple</title>
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@400;600&family=Playfair+Display:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --sandalwood: #f5efe6;
+            --maroon: #6b1f1f;
+            --gold: #c9a24d;
+            --dark: #2b2b2b;
+        }
+
+        /* Hero Carousel */
+
+        .hero {
+            height: 100vh;
+        }
+
+        .carousel-item {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .carousel-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: var(--sandalwood);
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+
+        .malayalam {
+            font-family: 'Noto Serif Malayalam', serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            color: var(--maroon);
+            font-weight: 700;
+        }
+
+        .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: var(--maroon);
+        }
+
+        /* Hero Section */
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .hero span {
+            color: var(--gold);
+        }
+
+        /* Section */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            color: var(--maroon);
+            font-weight: 700;
+        }
+
+        /* Cards */
+        .card {
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            border-radius: 10px;
+        }
+
+        /* Table */
+        .table thead {
+            background-color: var(--maroon);
+            color: #fff;
+        }
+
+        /* Gallery */
+        .gallery img {
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--maroon);
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2.5rem;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            z-index: 10;
+        }
+
+        .nav-arrow:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <img src="images/logo_sm.png" alt="Temple Logo" width="50" height="50" class="me-2">
+            <a class="navbar-brand" href="#">Sri Kalarickal Devi Temple</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pooja">Pooja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#festivals">Festivals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section class="hero p-0">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000"
+                    style="background-image:url('images/templ3.jpeg');">
+                    <div class="carousel-overlay"></div>
+                </div>
+
+
+                <div class="carousel-item" data-bs-interval="3000" style="background-image:url('images/templ1.jpeg');">
+                    <div class="carousel-overlay"></div>
+                </div>
+            </div>
+
+            <div class="hero-content text-center">
+                <h1>Sri Kalarickal Devi Temple</h1>
+                <h3 class="malayalam">ശ്രീ കളരിക്കൽ ദേവി ക്ഷേത്രം</h3>
+                <p class="mt-3">A Divine Heritage of Kerala</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About the Temple</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        Sri Kalarickal Devi Temple is a centuries-old temple following traditional
+                        Kerala temple architecture and rituals. The temple is dedicated to
+                        Sri Raktheswari Moorthi, Lord Shiva and Parvathi are known for its spiritual serenity.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4">
+                        <ul>
+                            <li>Presiding Deity: Sri Raktheswari Moorthi</li>
+                            <li>Architecture: Kerala Traditional Style</li>
+                            <li>Main Festival: Annual Utsavam</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pooja Timings -->
+    <section id="pooja" class="bg-white">
+        <div class="container">
+            <div class="section-title">
+                <h2>Daily Pooja & Timings</h2>
+            </div>
+            <table class="table table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th>Session</th>
+                        <th>Time</th>
+                        <th>Pooja</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Morning</td>
+                        <td>5:00 AM - 9:00 AM</td>
+                        <td>Usha Pooja</td>
+                    </tr>
+                    <tr>
+                        <td>Evening</td>
+                        <td>5:00 PM - 8:30 PM</td>
+                        <td>Deeparadhana</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Festivals -->
+    <section id="festivals">
+        <div class="container">
+            <div class="section-title">
+                <h2>Festivals & Events</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Annual Utsavam</h5>
+                        <p>10 Days celebration with traditional rituals.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Shivaratri</h5>
+                        <p>Special poojas dedicated to Lord Shiva.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Aayilyam Pooja</h5>
+                        <p>Observed thrice every year.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="bg-white">
+        <div class="container">
+            <div class="section-title">
+                <h2>Gallery</h2>
+            </div>
+            <div class="row gallery g-3">
+                <div class="col-md-3"><img src="images/templ2.jpeg" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" onclick="openGallery(1)"></div>
+                <div class="col-md-3"><img src="images/templ5.jpeg" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" onclick="openGallery(1)">
+                </div>
+                <div class="col-md-3"><img src="images/templ6.jpeg" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" onclick="openGallery(2)">
+                </div>
+                <div class="col-md-3"><img src="images/templ7.jpeg" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" onclick="openGallery(3)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact & Location</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Address:</strong> Ochira, Kerala, India</p>
+                    <p><strong>Phone:</strong> +91 9497308310</p>
+                    <!-- <p><strong>Email:</strong> info@temple.com</p> -->
+                </div>
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.4436591256!2d76.53334497445523!3d9.114338287648433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b061d9c684c2615%3A0xa961a4b267024390!2sKalarickal%20Devi%20Temple!5e0!3m2!1sen!2sae!4v1767533093204!5m2!1sen!2sae"
+                        width="100%" height="250" style="border:0;" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>© 2026 Sri Kalarical Devi Temple | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Gallery Images Modal -->
+    <script>
+        const galleryImages = [
+            "images/templ2.jpeg",
+            "images/templ5.jpeg",
+            "images/templ6.jpeg",
+            "images/templ7.jpeg"
+        ];
+
+        let currentIndex = 0;
+
+        function openGallery(index) {
+            currentIndex = index;
+            document.getElementById("modalImage").src = galleryImages[currentIndex];
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            document.getElementById("modalImage").src = galleryImages[currentIndex];
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            document.getElementById("modalImage").src = galleryImages[currentIndex];
+        }
+    </script>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<!-- Image Modal with Arrows -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0 position-relative">
+
+            <!-- Left Arrow -->
+            <button class="btn nav-arrow start-0" onclick="prevImage()">❮</button>
+
+            <!-- Image -->
+            <img id="modalImage" class="img-fluid rounded mx-auto d-block">
+
+            <!-- Right Arrow -->
+            <button class="btn nav-arrow end-0" onclick="nextImage()">❯</button>
+
+        </div>
+    </div>
+</div>
+
+</html>
